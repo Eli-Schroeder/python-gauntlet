@@ -26,7 +26,7 @@ class Loops:
     # to move to safety!
 
     def dodge_projectiles(self, scenario):
-        return NotImplementedError()
+        return "skip"
 
     # Uh oh! More arrows!
 
@@ -48,7 +48,7 @@ class Loops:
     # being next to a wall.
 
     def dodge_projectiles_but_harder(self, scenario):
-        return NotImplementedError()
+        return "skip"
 
     # You realize that you could easily re-engineer your teleport ability given just
     # the ability to move left or right with infinite speed. Implement this function
@@ -56,17 +56,5 @@ class Loops:
     # go to with just an index.
 
     def move_to(self, scenario, position):
-        return NotImplementedError()
+        return "skip"
 
-    # Now that you have your teleport ability back, use it to escape falling debris.
-
-    # This time, the scenario represented in this picture is indicative of the only
-    # scenario. There are three large pieces of debris that will fall and crush you
-    # if you aren't in the right place at the right time.
-
-    # Use your own function self.move_to(scenario, x) to dodge the debris. After dodging
-    # each piece, call scenario.progress() to make one piece of debris fall and prepare
-    # for the next.
-
-    def dodge_debris(self, scenario):
-        raise NotImplementedError()
